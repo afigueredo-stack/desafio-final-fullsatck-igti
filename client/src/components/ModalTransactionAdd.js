@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useForm } from 'react';
+import React, { useState, useEffect } from 'react';
 import { dataCorrentComplete } from '../helpers/dateHelper';
 
 /**
@@ -63,7 +63,6 @@ export default function ModalTransactionAdd({ onSaveAdd, onCloseAdd }) {
       event.preventDefault();
       return;
     }
-    const dataForm = new Date(date);
 
     const formData = {
       description,

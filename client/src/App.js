@@ -159,7 +159,6 @@ export default function App() {
   }
 
   const handleAdd = async (newTransaction) => {
-    console.log(newTransaction);
     await TransactionService.create(newTransaction);
     setIsModalOpenAdd(false);
   }
